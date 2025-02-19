@@ -1,9 +1,30 @@
-# 🔒 Laravel NIST Password Rules
+# This is a fork of [langleyfoxall/laravel-nist-password-rules](https://github.com/langleyfoxall/laravel-nist-password-rules/)
 
-[![Build Status](https://travis-ci.org/langleyfoxall/laravel-nist-password-rules.svg?branch=master)](https://travis-ci.org/langleyfoxall/laravel-nist-password-rules)
-[![Coverage Status](https://coveralls.io/repos/github/langleyfoxall/laravel-nist-password-rules/badge.svg?branch=master)](https://coveralls.io/github/langleyfoxall/laravel-nist-password-rules?branch=master)
-[![StyleCI](https://github.styleci.io/repos/154853082/shield?branch=master)](https://github.styleci.io/repos/154853082)
-[![Packagist](https://img.shields.io/packagist/dt/langleyfoxall/laravel-nist-password-rules.svg)](https://packagist.org/packages/langleyfoxall/laravel-nist-password-rules/stats)
+## This fork has been created to fix dependency issues with the original package.
+
+The original package has a dependency on `divineomega/laravel-password-exposed-validation-rule` in version `4.0`, which is not available and causes composer to fail when trying to install the package.
+This fork has been created to fix this issue by fixing the dependency to `2.5`.
+
+## Usage
+
+To use this fork in your project add the following to your `composer.json`:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/m-kas/laravel-nist-password-rules"
+    }
+  ]
+}
+```
+
+
+
+# Original README.md below:
+
+# 🔒 Laravel NIST Password Rules
 
 This package provides Laravel validation rules that follow the password related
 recommendations found in [NIST Special Publication 800-63B section 5](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5). 
